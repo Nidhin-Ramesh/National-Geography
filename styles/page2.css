@@ -1,0 +1,245 @@
+#page-2{
+display: flex;
+flex-direction: column;
+position: relative;
+width: 100%;
+justify-content: center;
+align-items: center;
+height: 90vh;
+background-color: black;
+}
+#video-background{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    
+}
+video{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#video-background::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 1));
+    z-index: 2;
+}
+#show-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    max-width: 700px;
+    z-index: 3;
+    height: 10vh;
+
+    color: white;
+
+}
+#show-info h2{
+    display: flex;
+    text-align: center;
+    font-size: 33px;
+}
+#show-discription{
+    display: flex;
+    text-align: center;
+    font-size: 18px;
+    padding: 0px 20px;
+    
+}
+#stream-now{
+    display: flex;
+    position: relative;
+    justify-content: start;
+    z-index: 1;
+    color: white;
+    align-items: start;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 204, 0);
+    text-underline-offset: 2px;
+}
+#stream-now .highlight .background{
+    
+    position:absolute;
+    background-color: rgb(255, 204, 0);
+    height: 0;
+    width: 89.99px;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    transition: height 0.2s ease;
+    
+}
+#stream-now .highlight:hover .background{
+    height: 100%;
+    cursor: pointer;
+    
+}
+#stream-now .highlight:hover{
+    color: rgb(0, 0, 0) ;
+    cursor: pointer;
+}
+#slider-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+}
+#shows{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    width: 100%;
+    margin: -3;
+    color: white;
+    max-width: 900px;
+}
+#shows-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    align-items: center;
+
+}
+@media(max-width:776px){
+    
+    #shows-header{
+        flex-direction: column;
+    }
+}
+#see-shows{
+    display: flex;
+    position: relative;
+    justify-content: start;
+    z-index: 1;
+    color: white;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 204, 0);
+    text-underline-offset: 2px;
+
+}
+#see-shows .highlight .background{
+    
+    position:absolute;
+    background-color: rgb(255, 204, 0);
+    height: 0;
+    width: 80.99px;
+    z-index: -1;
+    bottom: 0;
+    left: 0;
+    transition: height 0.2s ease;
+    
+}
+#see-shows .highlight:hover .background{
+    height: 100%;
+    cursor: pointer;
+    
+}
+#see-shows .highlight:hover{
+    color: rgb(0, 0, 0) ;
+    cursor: pointer;
+}
+#shows-slider{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 10px 20px;
+    overflow: scroll;
+    scrollbar-width:none;
+    
+    
+
+
+}
+#shows-slider::-webkit-scrollbar{
+    display: none;
+}
+
+
+#shows-slider img{
+    
+    height: 172px;
+    margin-right: 20px;
+
+
+}
+
+#footer{
+    display: flex;
+    
+    color: white;
+    flex-wrap: wrap;
+    margin: 20px;
+    
+    
+    
+}
+#footer ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+#footer li{
+    display: flex;
+    width: 100%;
+    font-size: 12px;
+    font-weight: 100;
+    flex-wrap: wrap;
+}
+#footer h5{
+    font-size: 16px;
+}
+#footer li:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+
+
+}
+#follow-us{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    top: 0;
+    margin: 20px;
+}
+#follow-us div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    
+}
+#follow-us h5{
+    margin:0;
+
+}
+#follow-us p{
+    margin-right: 10px;
+}
+#follow-us p:hover{
+    color: yellow;
+}

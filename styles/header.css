@@ -1,0 +1,182 @@
+
+.header{
+   
+    font-family: oswald,sans-serif;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 0px 17px;
+    justify-content:space-between;
+    z-index: 100;
+    
+    
+}
+
+
+.logo-container{
+    display: flex;
+    align-items: center;
+    width: 109px;
+    height:48px ;
+}
+.logo{
+    width: 109px;
+    height:32px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.navigation-menu {
+    
+    display: flex;
+    width: 460.94px;
+    height: 48px;
+    margin: 0;
+    overflow: hidden;
+    
+    flex-direction: row;
+    align-items: center;
+    list-style: none;
+    justify-content: end;
+    
+}
+.navigation-menu li{
+    display: inline-block;
+    margin-right: 20px;  
+}
+.navigation-menu li a{
+    text-decoration: none;
+
+}
+.login{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+.login a{
+    color: black;
+}
+.login a:hover{
+   color: rgb(54, 53, 53);
+}
+.search{
+    align-items: center;
+}
+.search img{
+    width: 20px;
+    margin-top: 8px;
+}
+.search img:hover{
+    opacity:0.7;
+}
+.newsletters{
+
+    position: relative;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 204, 0);
+    text-underline-offset: 3px;
+    font-weight: 300;
+    overflow: hidden;
+
+}
+.newsletters.background1,
+.newsletters .background2{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    transition: height 0.2s ease ;
+
+}
+.newsletters .background1{
+    height: 100%;
+    background-color: white;
+
+}
+.newsletters .background2{
+    height: 0;
+    background-color: rgb(255, 204, 0);
+}
+.newsletters:hover .background1{
+    height: 0 ;
+}
+.newsletters:hover .background2{
+    height: 100%;
+}
+.newsletters a {
+    position: relative;
+    z-index:1;
+    color: black;
+
+    
+}
+.subscribe{
+    position:relative;
+    overflow: hidden;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: black;
+    height: 100%;
+
+}
+.subscribe .background1,
+.subscribe .background2{
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.2s ease-in-out;
+
+}
+.subscribe .background1{
+    background-color: black;
+    width: 100%;
+}
+.subscribe .background2{
+    background-color: rgb(255, 204, 0);
+    width: 0;
+}
+
+.subscribe:hover .background2{
+    width: 100%;
+    z-index: 0;
+}
+.subscribe a{
+    position: relative;
+    z-index: 1;
+    color: white ;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.subscribe:hover a{
+    color: black;
+}
+.menu a{
+font-size: 16px;
+letter-spacing: 2px;
+color: black;
+}
+.menu img{
+    width: 16px;
+}
+.menu:hover a{
+    color: rgb(46, 45, 45);
+}
+.menu:hover img{
+opacity: 0.6;
+}
+@media(max-width: 600px){
+    .navigation-menu .search,
+    .navigation-menu .newsletters,
+    .navigation-menu .menu a{
+        display: none;
+    }
+}

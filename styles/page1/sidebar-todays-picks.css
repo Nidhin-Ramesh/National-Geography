@@ -1,0 +1,167 @@
+
+.sidebar-todays-picks{
+    display: flex;
+    flex-direction: column;
+    height: autopx;
+    width: 100%;
+    
+}
+.pick-container-container{
+    display: flex;
+    flex-direction: column;
+}
+@media(min-width:1121px) {.sidebar-todays-picks{
+    width: 313.328px;
+    margin-right: 40px;
+}
+
+}
+@media(min-width:776px) and (max-width:1120px){
+    .sidebar-todays-picks{
+        flex-direction: column;
+
+        
+        
+    }
+
+}
+@media (min-width:776px) and (max-width:1120px){
+    .pick-container-container{
+        height: 360px;
+        flex-wrap: wrap;
+        
+}
+
+}
+.todays-picks{
+    display: flex;
+    flex-direction:row;
+    margin-bottom:32px ;
+    
+
+}
+.todays-picks div{
+    width: 5px ;
+    height: 24px;
+    background-color:rgb(255, 204, 0) ;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+
+
+}
+.todays-picks h1{
+    color: white;
+    margin: 0;
+    font-size: 24px;
+    
+}
+
+.pick-container{
+    display: flex;
+    height: 120px;
+
+
+}
+@media(min-width:776px) and (max-width:1120px){
+    .pick-container{
+        width: 50%;
+    }
+}
+
+
+.pick{
+    display: flex;
+    flex-direction: row;
+    height: 90px;
+}
+.pick-image{
+    display: flex;
+    flex-shrink: 0;
+    max-width: 90px;
+    height: 90px;
+    margin-right: 20px;
+}
+.sidebar-todays-picks img{
+    width: 100%;
+    height: 100%;
+}
+.sidebar-todays-picks img:hover{
+cursor: pointer;
+}
+.pick-info{
+    display: flex;
+    flex-direction: column;
+}
+.pick-title{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+
+}
+.pick-title:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+.pick-discription{
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+
+
+}
+.pick-discription:hover{
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    cursor: pointer;
+}
+.see-more {
+    display: flex;
+    position: relative;
+    justify-content: start;
+    z-index: 1;
+    color: white;
+    align-items: start;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 16px;
+    margin-bottom: 23px;
+    letter-spacing: 2px;
+    text-decoration: underline;
+    text-decoration-color: rgb(255, 204, 0);
+    text-underline-offset: 2px;
+    
+
+}
+
+
+@media(min-width:776px) and (max-width:1120px){
+    .see-more{
+        justify-content:center;
+        align-items: center;
+    }
+    
+}
+.see-more .highlight .background{
+    
+    position:absolute;
+    background-color: rgb(255, 204, 0);
+    height: 0;
+    width: 66.99px;
+    z-index: -1;
+    bottom: 0;
+
+    transition: height 0.2s ease;
+    
+}
+
+.see-more .highlight:hover .background{
+    height: 100%;
+    cursor: pointer;
+    
+}
+.see-more .highlight:hover{
+    color: rgb(0, 0, 0) ;
+    cursor: pointer;
+}
